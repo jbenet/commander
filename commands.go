@@ -232,7 +232,7 @@ func (c *Command) Dispatch(args []string) error {
 }
 
 func (c *Command) usage() error {
-	c.SortCommands()
+	// c.SortCommands()
 	err := tmpl(c.Stderr, c.UsageTemplate, c)
 	if err != nil {
 		fmt.Println(err)
