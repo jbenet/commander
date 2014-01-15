@@ -320,7 +320,7 @@ func (c *Command) SubcommandList(list Listing) []*Command {
 var Defaults = Command{
 	UsageTemplate: `{{if .Runnable}}Usage: {{if .Parent}}{{.Parent.FullSpacedName}}{{end}} {{.UsageLine}}
 
-{{end}}{{.FullSpacedName}} - {{.Short}}
+{{else}}{{.FullSpacedName}} - {{end}}{{.Short}}
 
 {{if commandList}}Commands:
 {{range commandList}}
