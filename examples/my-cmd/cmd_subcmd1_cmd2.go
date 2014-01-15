@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/gonuts/commander"
 	"github.com/gonuts/flag"
+	"github.com/jbenet/commander"
 )
 
 var cmd_subcmd1_cmd2 = &commander.Command{

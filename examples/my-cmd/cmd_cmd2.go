@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/gonuts/commander"
 	"github.com/gonuts/flag"
+	"github.com/jbenet/commander"
 )
 
 func ex_make_cmd_cmd2() *commander.Command {
